@@ -12,7 +12,7 @@ mock_client = MagicMock()
 mock_groq.Groq.return_value = mock_client
 sys.modules["groq"] = mock_groq
 
-import router
+import Router as router
 router.client = mock_client
 
 def make_resp(text):
